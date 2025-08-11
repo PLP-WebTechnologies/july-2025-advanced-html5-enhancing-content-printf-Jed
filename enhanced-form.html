@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Enhanced HTML5 Content & Form</h1>
+        <p>This page demonstrates lists, tables, media embedding, and an HTML5 form with validation.</p>
+    </header>
+
+    <section>
+        <h2>1. Lists</h2>
+        <h3>Shopping List</h3>
+        <ul>
+            <li>Milk</li>
+            <li>Bread</li>
+            <li>Eggs</li>
+        </ul>
+
+        <h3>Steps to Bake a Cake</h3>
+        <ol>
+            <li>Preheat the oven.</li>
+            <li>Mix ingredients.</li>
+            <li>Bake for 45 minutes.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>2. Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Apples</td>
+                    <td>$2.50</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Bananas</td>
+                    <td>$1.20</td>
+                    <td>Out of stock</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>3. Media</h2>
+        <figure>
+            <img src="media/example.jpg" alt="Seagull Resting on Modern Street Light Against Blue Sky" width="300">
+            <figcaption>Sample image embedded with HTML5</figcaption>
+        </figure>
+        <audio controls>
+            <source src="media/sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <video controls width="400">
+            <source src="media/sample.mp4" type="video/mp4">
+            Your browser does not support the video element.
+            
+        </video>
+    </section>
+
+    <section>
+        <h2>4. HTML5 Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="100" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="favcolor">Favorite Color:</label>
+                <input type="color" id="favcolor" name="favcolor">
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select...</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="ca">Canada</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" name="subscribe" value="yes">
+                    Subscribe to newsletter
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comments</legend>
+                <label for="comments">Your Message:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments..."></textarea>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
